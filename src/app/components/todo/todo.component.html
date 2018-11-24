@@ -1,0 +1,11 @@
+<p>Your todo's for today: {{ todosNumberService.todoNumber }}</p>
+<form>
+  <p>
+{{ alertMsgService.alertMsg }}</p>
+  <input type="text" placeholder="Any ToDo?" #newTodo (keyup.enter)="addTodo(newTodo.value); newTodo.value = ''">
+<input type="submit" (click)="addTodo(newTodo.value); newTodo.value = ''" [value]="addBtnText">
+</form>
+
+<ul>
+  <app-todo-item></app-todo-item>
+</ul>
