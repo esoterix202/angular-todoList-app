@@ -1,18 +1,18 @@
-<li class="row d-flex text-left" *ngFor="let todo of todosService.todos; let i = index">
-  <div class="col-sm-10 d-flex" *ngIf="todoShow">
-    <b class="todo-item-n0">{{ i + 1 }}.</b>
+<li class="row mb-5 text-left" *ngFor="let todo of todosService.todos; let i = index">
+  <div class="todo-wrap col-10 allign-self-center" *ngIf="todoShow">
+    <span class="todo-item-n0">{{ i + 1 }}.</span>
     <span class="todo-item">{{ todo }}</span>
   </div>
 
-  <input class="form-control col-sm-10" placeholder="Edit Todo" *ngIf="editTodoShow" [(ngModel)]="todo">
+  <input class="form-control col-10 allign-self-center" placeholder="Edit Todo" *ngIf="editTodoShow" [(ngModel)]="todo">
 
-  <button class="form-control btn btn-secondary fas fa-save col-sm-2" type="submit" *ngIf="saveBtnShow" (click)="saveTodo()"
+  <button class="form-control btn btn-secondary fas fa-save col-1 allign-self-center" type="submit" *ngIf="saveBtnShow" (click)="saveTodo()"
     [value]="saveBtnText"></button>
 
-  <button class="form-control btn btn-secondary fas fa-edit col-sm-1" type="submit" *ngIf="editBtnShow" (click)="editTodoToggle()"
+  <button class="form-control btn btn-secondary fas fa-edit col-1 allign-self-center" type="submit" *ngIf="editBtnShow" (click)="editTodoToggle()"
     [value]="editBtnText"></button>
 
-  <button class="form-control btn btn-secondary fas fa-trash col-sm-1" type="submit" *ngIf="deleteBtnShow" (click)="deleteTodo(i)"
+  <button class="form-control btn btn-secondary fas fa-trash col-1 allign-self-center" type="submit" *ngIf="deleteBtnShow" (click)="deleteTodo(i)"
     [value]="dltBtnText"></button>
 
 </li>

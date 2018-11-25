@@ -42,8 +42,8 @@ html {
 }
 
 .row {
+  align-items: center;
   flex-wrap: nowrap;
-  margin: auto;
 }
 
 .form-control {
@@ -74,6 +74,7 @@ html {
 
   &-primary,
   &-primary:focus {
+    display: inline;
     color: #EFF7F7;
 
     &:hover,
@@ -100,13 +101,22 @@ html {
   margin-top: 2rem;
 }
 
+.todo-wrap {
+  position: relative;
+}
+
 .todo-item-n0 {
-    font-size: 2rem;
-    font-weight: 300;
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .todo-item {
-  word-wrap: wrap;
+  line-height: 1;
+  overflow-wrap: break-word;
   padding-left: 1rem;
   font-size: 2rem;
   font-weight: 700;
