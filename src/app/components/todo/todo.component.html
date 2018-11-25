@@ -1,12 +1,11 @@
 <div class="col">
-<p class="text-center">Your todo's for today: <b class="text-secondary">{{ todosNumberService.todoNumber }}</b></p>
-  <!-- <hr class="bg-primary"> -->
+  <p class="text-center">Your todo's for today: <b class="text-secondary ml-2">{{ todosNumberService.todoNumber }}</b></p>
   <form class="row" action="#">
     <input class="form-control col-sm-11" type="text" placeholder="Enter new todo..." #newTodo (keyup.enter)="addTodo(newTodo.value); newTodo.value = ''">
     <button class="form-control btn btn-primary fas fa-plus col-sm-1" type="submit" (click)="addTodo(newTodo.value); newTodo.value = ''"
       [value]="addBtnText"></button>
   </form>
-<p class="lead mt-2 text-center">
+  <p class="lead mt-2 text-center">
     {{ alertMsgService.alertMsg }}</p>
 
   <ul class="list-inline">

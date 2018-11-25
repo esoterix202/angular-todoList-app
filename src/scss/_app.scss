@@ -43,7 +43,7 @@ html {
 
 .row {
   flex-wrap: nowrap;
-  margin: 0;
+  margin: auto;
 }
 
 .form-control {
@@ -106,9 +106,9 @@ html {
 }
 
 .todo-item {
+  word-wrap: wrap;
   padding-left: 1rem;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 2;
   color: #00A7E1;
 }

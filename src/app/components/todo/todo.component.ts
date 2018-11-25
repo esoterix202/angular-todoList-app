@@ -7,8 +7,7 @@ import { AlertMessageService } from "../../services/alert-message.service";
 @Component({
 
   selector: 'app-todo',
-  templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.scss']
+  templateUrl: './todo.component.html'
 
 })
 

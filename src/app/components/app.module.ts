@@ -4,13 +4,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './components/app.component';
-import { TodoComponent } from './components/todo/todo.component';
-import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { AppComponent } from './app.component';
+import { TodoComponent } from './todo/todo.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
-import { TodosService } from "./services/todos.service";
-import { TodosNumberService } from "./services/todos-number.service";
-import { AlertMessageService } from "./services/alert-message.service";
+import { TodosService } from "../services/todos.service";
+import { TodosNumberService } from "../services/todos-number.service";
+import { AlertMessageService } from "../services/alert-message.service";
 
 @NgModule({
   declarations: [
