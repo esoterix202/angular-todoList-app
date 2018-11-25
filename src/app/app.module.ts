@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
@@ -17,6 +19,7 @@ import { AlertMessageService } from "./services/alert-message.service";
     TodoItemComponent,
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     FormsModule
   ],
